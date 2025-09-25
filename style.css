@@ -395,3 +395,53 @@ html {
   font-size: 18px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    line-height: 36px;
+  }
+
+  .btn {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+
+  .special {
+    flex-direction: column;  
+    width: 90%;              
+  }
+
+  .right-cards {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .alt-categories ul,
+  .categories ul {
+    flex-wrap: wrap;   
+    gap: 10px;
+  }
+
+  .menu-list {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .menu-list > div {
+    width: 90%;   
+  }
+
+  .footer {
+    flex-direction: column; 
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
