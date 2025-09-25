@@ -61,9 +61,10 @@ html {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  width: 40%;
+  width: 30%;
   margin: auto;
   margin-top: 20px;
+
 }
 
 .card1 {
@@ -91,14 +92,18 @@ html {
 }
 
 .card3 {
-  background-image: url("public/assets/iteration-2/cta/kart-3.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  border-radius: 15px;
-  padding: 10px;
-  font-family: Barlow;
-}
+    background-image: url("public/assets/iteration-2/cta/kart-3.png");
+    background-repeat: no-repeat;
+    background-position: center;   
+    background-size: cover;        
+    border-radius: 15px;
+    padding: 10px;
+    font-family: Barlow;
+    color: white;
+  }
+  
+ 
+
 
 .absolute-aci-burger {
   border: none;
@@ -307,6 +312,8 @@ html {
   padding: 40px 60px;
   flex-wrap: wrap;
   gap: 30px;
+  font-family: Barlow;
+  font-size: 18px;
 }
 
 /* Sol kısım */
@@ -362,7 +369,7 @@ html {
 
 /* Instagram kısmı */
 .footer-social {
-  flex: 1;
+  flex: 0.75;             /*garip ama deneyince oldu*/
   min-width: 220px;
 }
 
@@ -396,6 +403,7 @@ html {
   cursor: pointer;
 }
 
+/* Mobil için responsive ayarlar */
 @media (max-width: 768px) {
   .title {
     font-size: 2rem;
@@ -408,8 +416,8 @@ html {
   }
 
   .special {
-    flex-direction: column;  
-    width: 90%;              
+    flex-direction: column;  /* kartları alt alta getir */
+    width: 90%;              /* daha dar ekran için % genişlik */
   }
 
   .right-cards {
@@ -419,21 +427,21 @@ html {
 
   .alt-categories ul,
   .categories ul {
-    flex-wrap: wrap;   
+    flex-wrap: wrap;   /* menü ikonları alt satıra geçebilsin */
     gap: 10px;
   }
 
   .menu-list {
-    flex-direction: column; 
+    flex-direction: column; /* kartları alt alta */
     align-items: center;
   }
 
   .menu-list > div {
-    width: 90%;   
+    width: 90%;   /* sabit genişlik yerine % */
   }
 
   .footer {
-    flex-direction: column; 
+    flex-direction: column; /* footer alt alta */
     align-items: flex-start;
     padding: 20px;
   }
@@ -442,6 +450,10 @@ html {
     flex-direction: column;
     text-align: center;
     gap: 10px;
-  }
+ }
+
+
 }
+
+
 
